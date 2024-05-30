@@ -42,7 +42,7 @@ router.get("/getRepos/:username", async (req: Request, res: Response) => {
     const username = req.params.username;
     const response = await octokit.repos.listForUser({
       username: username,
-      per_page: 100, // Adjust per_page as needed, GitHub API default is 30
+      per_page: 100,
     });
     res.status(200).send(response.data);
   } catch (err) {
