@@ -4,7 +4,6 @@ import cors from "cors";
 
 const app: Express = express();
 const port = process.env.PORT || 3001;
-const password = "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";
 
 app.use(express.json());
 app.use(cors());
